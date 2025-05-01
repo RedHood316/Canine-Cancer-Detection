@@ -33,8 +33,7 @@ The project explores:
 📦 Canine_Cancer_Detection
  ┣ 📁 features/                # Precomputed CSV features
  ┣ 📁 model/                   # Folder for model file (excluded from GitHub)
- ┣ 📁 notebooks/               # Jupyter notebooks (optional analysis)
- ┣ 📄 vit_test_eval.py         # Evaluation script
+ ┣ 📄 Code.ipynb               # Main Jupyter notebook for analysis & evaluation
  ┣ 📄 requirements.txt         # Dependencies
  ┗ 📄 README.md
 ```
@@ -56,19 +55,19 @@ cd Canine-Cancer-Detection
 pip install -r requirements.txt
 ```
 
-### 3. Run evaluation script
+### 3. Run the notebook
 
-Update paths in `vit_test_eval.py` as needed:
+Open the notebook in Jupyter:
+
+```bash
+jupyter notebook Code.ipynb
+```
+
+Make sure to update any paths inside the notebook:
 
 ```python
 model_save_path = r"C:\your_path\Model\vit_feature_classifier.pth"
 test_csv_path = r"C:\your_path\features\test_features_hybrid.csv"
-```
-
-Then run:
-
-```bash
-python vit_test_eval.py
 ```
 
 ---
@@ -97,6 +96,13 @@ Confusion matrix is also visualized using Seaborn.
 
 ---
 
+## 📦 Model File (.pth)
+
+> ⚠️ The model file `vit_feature_classifier.pth` is **not included in this repository** due to GitHub's 100MB size limit.
+
+If available, you can download it from the [**Releases**](https://github.com/RedHood316/Canine-Cancer-Detection/releases) section.
+
+---
 
 ## 🧠 Citation
 
